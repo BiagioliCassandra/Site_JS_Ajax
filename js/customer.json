@@ -4,19 +4,19 @@
         "id" : 0,
         "name" : "Dupont",
         "age" : 56,
-        "country" : "Croix"
+        "city" : "Croix"
     }, 
     {
         "id" : 1,
         "name" : "Serial",
         "age" : 6,
-        "country" : "Roubaix"
+        "city" : "Roubaix"
     },
     {
         "id" : 2,
         "name" : "Lisa",
         "age" : 32,
-        "country" : "Tourcoing"
+        "city" : "Tourcoing"
     }
     ]
 }

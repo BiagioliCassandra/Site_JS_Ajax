@@ -1,10 +1,3 @@
-    // ul = document.createElement("ul");
-    // for(var i = 0; i < customer.length; i++) {
-    //     var li = document.createElement("li");
-    //     li.innerHTML = customer[i].id + customer[i].name;
-    //     ul.appendChild(li);
-    // }
-    // document.getElementsByTagName("main")[0].appendChild(ul);
 var requestURL = "http://localhost/Lab/semaine25/Ajax/js/customer.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -25,22 +18,21 @@ function showCustomer(jsonObj) {
     var thHeadId = document.createElement("th");
     var thHeadName = document.createElement("th");
     var thHeadAge = document.createElement("th");
-    var thHeadCountry = document.createElement("th");
+    var thHeadCity = document.createElement("th");
     var tBody = document.createElement("tbody");
     var trBody = document.createElement("tr");
-    var br = document.createElement("br");
 
     thHeadId.innerHTML = "Id";
     thHeadName.innerHTML = "Nom";
     thHeadAge.innerHTML = "Age";
-    thHeadCountry.innerHTML = "Ville";
+    thHeadCity.innerHTML = "Ville";
 
     table.appendChild(tHead);
     tHead.appendChild(trHead);
     trHead.appendChild(thHeadId);
     trHead.appendChild(thHeadName);
     trHead.appendChild(thHeadAge);
-    trHead.appendChild(thHeadCountry);
+    trHead.appendChild(thHeadCity);
     table.appendChild(tBody);
     tBody.appendChild(trBody);
 
@@ -48,18 +40,19 @@ function showCustomer(jsonObj) {
         var thBodyId = document.createElement("th");
         var thBodyName = document.createElement("th");
         var thBodyAge = document.createElement("th");
-        var thBodyCountry = document.createElement("th");
+        var thBodyCity = document.createElement("th");
+        var br = document.createElement("br");
 
         thBodyId.innerHTML = customers[i].id;
         thBodyName.innerHTML = customers[i].name;
         thBodyAge.innerHTML = customers[i].age;
-        thBodyCountry.innerHTML = customers[i].country;
+        thBodyCity.innerHTML = customers[i].city;
 
-        thBodyCountry.appendChild(br);
+        thBodyCity.appendChild(br);
         trBody.appendChild(thBodyId);
         trBody.appendChild(thBodyName);
         trBody.appendChild(thBodyAge);
-        trBody.appendChild(thBodyCountry);
+        trBody.appendChild(thBodyCity);
     }
 document.getElementsByTagName("main")[0].appendChild(table);
 }
