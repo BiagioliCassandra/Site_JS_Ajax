@@ -1,0 +1,22 @@
+{
+    "customers" : [
+    {
+        "id" : 0,
+        "name" : "Dupont",
+        "age" : 56,
+        "country" : "Croix"
+    }, 
+    {
+        "id" : 1,
+        "name" : "Serial",
+        "age" : 6,
+        "country" : "Roubaix"
+    },
+    {
+        "id" : 2,
+        "name" : "Lisa",
+        "age" : 32,
+        "country" : "Tourcoing"
+    }
+    ]
+}
